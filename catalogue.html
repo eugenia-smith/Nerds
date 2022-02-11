@@ -12,43 +12,48 @@
   <header class="page-header">
     <nav class="main-nav">
       <a href="index.html">
-        <img class="main-logo" src="#" alt="Лого Нёрдс">
+        <img class="main-logo" src="img/nerds-logo.svg" width="160" height="65" alt="Лого Нёрдс">
       </a>
       <ul class="main-menu">
         <li><a href="index.html">Студия</a></li>
-        <li><a href="#">Клиенты</a></li>
-        <li><a href="#">Магазин</a></li>
-        <li><a href="#">Контакты</a></li>
+        <li><a href="blank.html">Клиенты</a></li>
+        <li><a>Магазин</a></li>
+        <li><a href="blank.html">Контакты</a></li>
       </ul>
       <a class="user-menu" href="#">Корзина</a>
     </nav>
-    <h2 class="header-heading">Магазин готовых шаблонов</h2>
   </header>
+
   <main class="catalogue-body">
     <h1 class="visually-hidden">Каталог макетов NЁRDS</h1>
-    <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
-      <fieldset class="search-prices">
-        <legend class="prices-heading">Стоимость</legend>
-        <label class="range"><input class="range-toggle" type="range" min="0" max="200000"></label>
-        <label class="min-price">от<input class="price" type="text" value="0"></label>
-        <label class="max-price">до<input class="price" type="text" value="150000"></label>
-      </fieldset>
-      <fieldset class="search-grids">
-        <legend class="grids-heading">Сетка</legend>
-        <label class="grid-type"><input class="grid" type="radio" name="mockup-grid" checked>Адаптивная</label>
-        <label class="grid-type"><input class="grid" type="radio" name="mockup-grid">Резиновая</label>
-        <label class="grid-type"><input class="grid" type="radio" name="mockup-grid">Фиксированная</label>
-      </fieldset>
-      <fieldset class="search-peculiarities">
-        <legend class="peculiarities-heading">Особенности</legend>
-        <label class="peculiarity"><input class="specific" type="checkbox" checked>Слайдер</label>
-        <label class="peculiarity"><input class="specific" type="checkbox">Блок приемуществ</label>
-        <label class="peculiarity"><input class="specific" type="checkbox" checked>Новости</label>
-        <label class="peculiarity"><input class="specific" type="checkbox">Галерея</label>
-        <label class="peculiarity"><input class="specific" type="checkbox">Корзина</label>
-      </fieldset>
-      <button class="form-submit-button" type="submit">Показать</button>
-    </form>
+
+    <section class="searching">
+      <h2 class="header-heading">Магазин готовых шаблонов</h2>
+      <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
+        <fieldset class="search-prices">
+          <legend class="prices-heading">Стоимость</legend>
+          <label class="range"><input class="range-toggle" type="range" name="range" min="0" max="200000"></label>
+          <label class="min-price">от<input class="price" type="text" name="min-price" value="0"></label>
+          <label class="max-price">до<input class="price" type="text" name="max-price" value="150000"></label>
+        </fieldset>
+        <fieldset class="search-grids">
+          <legend class="grids-heading">Сетка</legend>
+          <label class="grid-type"><input class="grid" type="radio" name="mockup-grid" value="adaptive" checked>Адаптивная</label>
+          <label class="grid-type"><input class="grid" type="radio" name="mockup-grid" value="rubber">Резиновая</label>
+          <label class="grid-type"><input class="grid" type="radio" name="mockup-grid" value="fixed">Фиксированная</label>
+        </fieldset>
+        <fieldset class="search-peculiarities">
+          <legend class="peculiarities-heading">Особенности</legend>
+          <label class="peculiarity"><input class="specific" type="checkbox" name="peculiarity" value="slider" checked>Слайдер</label>
+          <label class="peculiarity"><input class="specific" type="checkbox" name="peculiarity" value="advantages">Блок приемуществ</label>
+          <label class="peculiarity"><input class="specific" type="checkbox" name="peculiarity" value="news" checked>Новости</label>
+          <label class="peculiarity"><input class="specific" type="checkbox" name="peculiarity" value="gallery">Галерея</label>
+          <label class="peculiarity"><input class="specific" type="checkbox" name="peculiarity" value="basket">Корзина</label>
+        </fieldset>
+        <button class="form-submit-button" type="submit">Показать</button>
+      </form>
+    </section>
+
     <section class="search-results">
       <h2 class="visually-hidden">Результаты поиска</h2>
       <div class="sorting-wrapper">
@@ -68,45 +73,65 @@
         <figure class="search-item">
           <img src="#" alt="Макет сайта путеводителя по Седоне">
           <figcaption class="item-available">
-            <p class="item-heading">Sedona</p>
+            <h3 class="item-heading"><a href="#">Sedona</a></h3>
             <p class="item-description">Информационный сайт для туристов</p>
             <button type="button">9 900 ₽</button>
           </figcaption>
         </figure>
+
         <figure class="search-item">
           <img src="#" alt="Макеты сайта и приложения PINK">
           <figcaption class="item-available">
-            <p class="item-heading">PINK APP</p>
+            <h3 class="item-heading"><a href="#">Pink App</a></h3>
             <p class="item-description">Продуктовый лендинг приложения для iOS и Android</p>
             <button type="button">9 900 ₽</button>
           </figcaption>
         </figure>
+
         <figure class="search-item">
           <img src="#" alt="Макет сайта барбершопа Бородинский">
+          <figcaption class="item-available">
+            <h3 class="item-heading"><a href="#">Barbershop Borodinsky</a></h3>
+            <p class="item-description">Сайт салона красоты.Для мужчин, да.</p>
+            <button type="button">9 900 ₽</button>
+          </figcaption>
         </figure>
+
         <figure class="search-item">
           <img src="#" alt="Макет сайта хендмейд товаров Мишка">
+          <figcaption class="item-available">
+            <h3 class="item-heading"><a href="#">Mishka</a></h3>
+            <p class="item-description">Интернет-магазин вязаных игрушек.</p>
+            <button type="button">9 900 ₽</button>
+          </figcaption>
         </figure>
+
         <figure class="search-item">
           <img src="#" alt="Макет сайта учебного центра">
+          <figcaption class="item-available">
+            <h3 class="item-heading"><a href="#">A Plus</a></h3>
+            <p class="item-description">Лендинг курсов повышения квалификации.</p>
+            <button type="button">9 900 ₽</button>
+          </figcaption>
         </figure>
+
         <figure class="search-item">
           <img src="#" alt="Макет сайта производителей кваса Кваст">
           <figcaption class="item-available">
-            <p class="item-heading">КВАСТ</p>
+            <h3 class="item-heading"><a href="#">Кваст</a></h3>
             <p class="item-description">Промо-сайт производителя крафтового кваса</p>
             <button type="button">9 900 ₽</button>
           </figcaption>
         </figure>
       </div>
-      <div class="search-items-toggle">
-        <a href="#" class="serch-items-page">1</a>
-        <a href="#" class="serch-items-page">2</a>
-        <a href="#" class="serch-items-page">Следующая</a>
-      </div>
-
+      <ul class="search-items-toggle">
+        <li><a class="serch-items-page">1</a></li>
+        <li><a href="#" class="serch-items-page">2</a></li>
+        <li><a href="#" class="serch-items-page">Следующая</a></li>
+      </ul>
     </section>
   </main>
+
   <footer class="page-footer">
     <div class="footer-map"></div>
     <div class="footer-feedback">
