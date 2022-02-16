@@ -8,15 +8,16 @@
   <title>HTML Academy: Nёrds</title>
   <link rel="stylesheet" href="#">
   <link rel="icon" href="favicon.ico">
-  <link rel="icon" href="img/favicon/favicon_32.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+  <link rel="icon" href="img/favicons/favicon_32.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-icon-180x180.png">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body>
   <header class="page-header">
     <nav class="main-nav">
       <a href="index.html">
-        <img class="main-logo" src="img/nerds-logo.svg" width="160" height="65" alt="Лого Нёрдс">
+        <img class="main-logo" src="img/nerds-main_logo.svg" width="160" height="65" alt="Лого Нёрдс">
       </a>
       <ul class="main-menu">
         <li><a href="index.html">Студия</a></li>
@@ -42,17 +43,24 @@
         </fieldset>
         <fieldset class="search-grids">
           <legend class="grids-heading">Сетка</legend>
-          <label class="grid-type"><input class="grid" type="radio" name="mockup-grid" value="adaptive" checked>Адаптивная</label>
+          <label class="grid-type"><input class="grid" type="radio" name="mockup-grid" value="adaptive"
+              checked>Адаптивная</label>
           <label class="grid-type"><input class="grid" type="radio" name="mockup-grid" value="rubber">Резиновая</label>
-          <label class="grid-type"><input class="grid" type="radio" name="mockup-grid" value="fixed">Фиксированная</label>
+          <label class="grid-type"><input class="grid" type="radio" name="mockup-grid"
+              value="fixed">Фиксированная</label>
         </fieldset>
         <fieldset class="search-peculiarities">
           <legend class="peculiarities-heading">Особенности</legend>
-          <label class="peculiarity"><input class="specific" type="checkbox" name="peculiarity" value="slider" checked>Слайдер</label>
-          <label class="peculiarity"><input class="specific" type="checkbox" name="peculiarity" value="advantages">Блок приемуществ</label>
-          <label class="peculiarity"><input class="specific" type="checkbox" name="peculiarity" value="news" checked>Новости</label>
-          <label class="peculiarity"><input class="specific" type="checkbox" name="peculiarity" value="gallery">Галерея</label>
-          <label class="peculiarity"><input class="specific" type="checkbox" name="peculiarity" value="basket">Корзина</label>
+          <label class="peculiarity"><input class="specific" type="checkbox" name="peculiarity" value="slider"
+              checked>Слайдер</label>
+          <label class="peculiarity"><input class="specific" type="checkbox" name="peculiarity" value="advantages">Блок
+            приемуществ</label>
+          <label class="peculiarity"><input class="specific" type="checkbox" name="peculiarity" value="news"
+              checked>Новости</label>
+          <label class="peculiarity"><input class="specific" type="checkbox" name="peculiarity"
+              value="gallery">Галерея</label>
+          <label class="peculiarity"><input class="specific" type="checkbox" name="peculiarity"
+              value="basket">Корзина</label>
         </fieldset>
         <button class="form-submit-button" type="submit">Показать</button>
       </form>
@@ -68,14 +76,25 @@
           <li class="sort-option"><a href="#">по назначению</a></li>
         </ul>
         <div class="sort-controls">
-          <a class="dir-down" href="#">туц</a>
-          <a class="dir-up" href="#">туц</a>
+          <a class="dir-down" href="#">
+            <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5.5 10L0 0H11" fill="#231F20" />
+            </svg>
+          </a>
+          <a class="dir-up" href="#">
+            <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g opacity="0.2">
+                <path d="M5.5 0L0 10H11L5.5 0Z" fill="#A6A6A6" />
+              </g>
+            </svg>
+          </a>
         </div>
       </div>
 
       <div class="search-items">
         <figure class="search-item">
-          <img src="img/cat_item_sedona.png" width="362" height="578" alt="Макет сайта путеводителя по Седоне">
+          <img src="img/catalogue/cat_item_sedona.png" width="362" height="578"
+            alt="Макет сайта путеводителя по Седоне">
           <figcaption class="item-available">
             <h3 class="item-heading"><a href="#">Sedona</a></h3>
             <p class="item-description">Информационный сайт для туристов</p>
@@ -84,7 +103,7 @@
         </figure>
 
         <figure class="search-item">
-          <img src="img/cat_item_pink.png" width="358" height="578" alt="Макеты сайта и приложения PINK">
+          <img src="img/catalogue/cat_item_pink.png" width="358" height="578" alt="Макеты сайта и приложения PINK">
           <figcaption class="item-available">
             <h3 class="item-heading"><a href="#">Pink App</a></h3>
             <p class="item-description">Продуктовый лендинг приложения для iOS и Android</p>
@@ -93,7 +112,8 @@
         </figure>
 
         <figure class="search-item">
-          <img src="img/cat_item_borodinski.png" width="358" height="578" alt="Макет сайта барбершопа Бородинский">
+          <img src="img/catalogue/cat_item_borodinski.png" width="358" height="578"
+            alt="Макет сайта барбершопа Бородинский">
           <figcaption class="item-available">
             <h3 class="item-heading"><a href="#">Barbershop Borodinsky</a></h3>
             <p class="item-description">Сайт салона красоты.Для мужчин, да.</p>
@@ -102,7 +122,8 @@
         </figure>
 
         <figure class="search-item">
-          <img src="img/cat_item_mishka.png" width="358" height="578" alt="Макет сайта хендмейд товаров Мишка">
+          <img src="img/catalogue/cat_item_mishka.png" width="358" height="578"
+            alt="Макет сайта хендмейд товаров Мишка">
           <figcaption class="item-available">
             <h3 class="item-heading"><a href="#">Mishka</a></h3>
             <p class="item-description">Интернет-магазин вязаных игрушек.</p>
@@ -111,7 +132,7 @@
         </figure>
 
         <figure class="search-item">
-          <img src="img/cat_item_aplus.png" width="358" height="578" alt="Макет сайта учебного центра">
+          <img src="img/catalogue/cat_item_aplus.png" width="358" height="578" alt="Макет сайта учебного центра">
           <figcaption class="item-available">
             <h3 class="item-heading"><a href="#">A Plus</a></h3>
             <p class="item-description">Лендинг курсов повышения квалификации.</p>
@@ -120,7 +141,8 @@
         </figure>
 
         <figure class="search-item">
-          <img src="img/cat_item_kvast.png" width="358" height="578" alt="Макет сайта производителей кваса Кваст">
+          <img src="img/catalogue/cat_item_kvast.png" width="358" height="578"
+            alt="Макет сайта производителей кваса Кваст">
           <figcaption class="item-available">
             <h3 class="item-heading"><a href="#">Кваст</a></h3>
             <p class="item-description">Промо-сайт производителя крафтового кваса</p>
