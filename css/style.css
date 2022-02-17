@@ -1,0 +1,66 @@
+/*Fonts*/
+
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/roboto.woff),
+  url(../fonts/roboto.woff2);
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/robotobold.woff),
+  url(../fonts/robotobold.woff2);
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/robotomedium.woff),
+  url(../fonts/robotomedium.woff2);
+  font-weight: 500;
+  font-style: normal;
+}
+
+/*Variables*/
+
+:root {
+  --basic-black: #000000;
+  --basic-white: #ffffff;
+  --basic-dark: #283136;
+  --extra-grey: #4d4d4d;
+  --basic-grey:  #666666;
+  --lower-intense-grey: #c1c1c1;
+  --light-grey: #dfdfdf;
+  --low-saturation-grey:#d5d5d5;
+  --extra-light-grey: #e1e1e1;
+  --lowest-intense-grey: #eeeeee;
+  --basic-red: #fb565a;
+  --extra-red: #e74246;
+  --intensive-red: #d7373b;
+  --basic-green: #00ca74;
+  --extra-green: #00bc6c;
+  --intensive-green: #00aa62;
+  --basic-yellow: #efc849;
+  --extra-yellow: #eab534;
+  --intensive-yellow: #e5a722;
+}
+
+
+/*Global*/
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+}
