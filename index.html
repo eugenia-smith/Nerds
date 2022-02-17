@@ -20,7 +20,7 @@
     <nav class="main-nav">
       <a><img class="main-logo" src="img/nerds-main_logo.svg" width="160" height="65" alt="Лого Нёрдс"></a>
       <ul class="main-menu">
-        <li><a href="blank.html">Студия</a></li>
+        <li class="current-menu-item"><a>Студия</a></li>
         <li><a href="blank.html">Клиенты</a></li>
         <li><a href="catalogue.html">Магазин</a></li>
         <li><a href="blank.html">Контакты</a></li>
@@ -36,19 +36,19 @@
       <div class="slide">
         <p class="slogan">Долго, дорого, скрупулёзно.</p>
         <p class="comment">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-        <button type="button" class="want-more">Узнать больше</button>
+        <button type="button" class="button want-more">Узнать больше</button>
         <img class="poster" src="img/slider/slide1_mobile.png" width="760" height="431" alt="Россыпь красивых телефонов">
       </div>
       <div class="slide">
         <p class="slogan">Любим математику, как никто другой.</p>
         <p class="comment">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-        <button type="button" class="want-more">Узнать больше</button>
+        <button type="button" class="button want-more">Узнать больше</button>
         <img class="poster" src="img/slider/slide2_pc.png" width="760" height="431" alt="Мониторы стоят спиной к спине">
       </div>
       <div class="slide">
         <p class="slogan">Только ночь, только хардкор.</p>
         <p class="comment">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-        <button type="button" class="want-more">Узнать больше</button>
+        <button type="button" class="button want-more">Узнать больше</button>
         <img class="poster" src="img/slider/slide3_tablet.png" width="760" height="431" alt="Планшет и телефон">
       </div>
     </section>
@@ -60,19 +60,19 @@
           <img class="service-icon" src="img/services/web_pages.jpg" width="300" height="146" alt="Иконка ноутбука на красном фоне">
           <h3 class="service-title">Веб-сайты</h3>
           <p class="service-description">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-          <a class="service-order" href="#">Заказать</a>
+          <a class="button service-order" href="#">Заказать</a>
         </li>
         <li class="service-list-option">
           <img class="service-icon" src="img/services/mobile_apps.png" width="300" height="146" alt="Мобильный телефон на зеленом фоне">
           <h3 class="service-title">Приложения</h3>
           <p class="service-description">Покорите топ-10 приложений в AppStore и Google Play</p>
-          <a class="service-order" href="#">Заказать</a>
+          <a class="button service-order" href="#">Заказать</a>
         </li>
         <li class="service-list-option">
           <img class="service-icon" src="img/services/presentations.jpg" width="300" height="146" alt="Флип-чарт на желтом фоне">
           <h3 class="service-title">Презентации</h3>
           <p class="service-description">Вы даже не подозреваете, насколько вы изумительны!</p>
-          <a class="service-order" href="#">Заказать</a>
+          <a class="button service-order" href="#">Заказать</a>
         </li>
       </ul>
     </section>
@@ -96,15 +96,15 @@
       <p class="statistics-header">с 2004 года Любим точность во всем:</p>
       <dl class="statistics-list">
         <div class="statistics-option">
-          <dt class="statistics-percentage">146%</dt>
+          <dt class="statistics-percentage">146<span>%</span></dt>
           <dd class="statistics-description">Уровень самоотдачи</dd>
         </div>
         <div class="statistics-option">
-          <dt class="statistics-percentage">100%</dt>
+          <dt class="statistics-percentage">100<span>%</span></dt>
           <dd class="statistics-description">Соблюдение сроков</dd>
         </div>
         <div class="statistics-option">
-          <dt class="statistics-percentage">50%</dt>
+          <dt class="statistics-percentage">50<span>%</span></dt>
           <dd class="statistics-description">Минимальная предоплата</dd>
         </div>
       </dl>
@@ -140,10 +140,10 @@
   <footer class="page-footer">
     <div class="footer-map">Тут будет карта</div>
     <div class="footer-feedback">
-      <p class="feedback-heading">NЁRDS DESIGN STUDIO</p>
+      <p class="feedback-heading">Nёrds design studio</p>
       <address class="feedback-address">наб. Реки Карповки, 5 лит П, Санкт-Петербург
         <a class="feedback-telephone" href="tel:+78005558628">+7 800 555-86-28</a>
-        <button type="button">Напишите нам</button>
+        <button type="button" class="button">Напишите нам</button>
       </address>
     </div>
 
@@ -163,20 +163,25 @@
       </form>
     </div> -->
 
-    <div class="social-media">
       <ul class="media-links">
         <li class="link">
-          <a href="#">VK</a>
+          <a href="#">
+            <span class="visually-hidden">VK</span>
+          </a>
         </li>
         <li class="link">
-          <a href="#">Facebook</a>
+          <a href="#">
+            <span class="visually-hidden">Facebook</span>
+          </a>
         </li>
         <li class="link">
-          <a href="#">Instagram</a>
+          <a href="#">
+            <span class="visually-hidden">Instagram</span>
+          </a>
         </li>
       </ul>
-    </div>
-    <div class="footer-text">
+
+      <div class="footer-text">
       <p class="footer-slogan">Давайте дружить, это выгодно!</p>
       <p class="footer-discount">Скидка 10% для друзей из социальных сетей.</p>
     </div>
