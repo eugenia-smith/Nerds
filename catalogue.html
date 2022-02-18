@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Nёrds</title>
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicons/favicon_32.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-icon-180x180.png">
@@ -33,24 +34,27 @@
     <h1 class="visually-hidden">Каталог макетов NЁRDS</h1>
 
     <section class="searching">
-      <h2 class="header-heading">Магазин готовых шаблонов</h2>
+      <h2 class="slogan header-heading">Магазин готовых шаблонов</h2>
       <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
+
         <fieldset class="search-prices">
-          <legend class="prices-heading">Стоимость</legend>
+          <legend class="heading prices-heading">Стоимость:</legend>
           <label class="range"><input class="range-toggle" type="range" name="range" min="0" max="200000"></label>
           <label class="min-price">от<input class="price" type="text" name="min-price" value="0"></label>
           <label class="max-price">до<input class="price" type="text" name="max-price" value="150000"></label>
         </fieldset>
+
         <fieldset class="search-grids">
-          <legend class="grids-heading">Сетка</legend>
+          <legend class="heading grids-heading">Сетка:</legend>
           <label class="grid-type"><input class="grid" type="radio" name="mockup-grid" value="adaptive"
               checked>Адаптивная</label>
           <label class="grid-type"><input class="grid" type="radio" name="mockup-grid" value="rubber">Резиновая</label>
           <label class="grid-type"><input class="grid" type="radio" name="mockup-grid"
               value="fixed">Фиксированная</label>
         </fieldset>
+
         <fieldset class="search-peculiarities">
-          <legend class="peculiarities-heading">Особенности</legend>
+          <legend class="heading peculiarities-heading">Особенности:</legend>
           <label class="peculiarity"><input class="specific" type="checkbox" name="peculiarity" value="slider"
               checked>Слайдер</label>
           <label class="peculiarity"><input class="specific" type="checkbox" name="peculiarity" value="advantages">Блок
@@ -62,6 +66,7 @@
           <label class="peculiarity"><input class="specific" type="checkbox" name="peculiarity"
               value="basket">Корзина</label>
         </fieldset>
+
         <button class="form-submit-button" type="submit">Показать</button>
       </form>
     </section>
@@ -69,7 +74,7 @@
     <section class="search-results">
       <h2 class="visually-hidden">Результаты поиска</h2>
       <div class="sorting-wrapper">
-        <p class="sort-heading">Сортировать</p>
+        <p class="heading sort-heading">Сортировать:</p>
         <ul class="sort-list">
           <li class="sort-option"><a href="#">по цене</a></li>
           <li class="sort-option"><a href="#">по типу</a></li>
@@ -96,18 +101,18 @@
           <img src="img/catalogue/cat_item_sedona.png" width="362" height="578"
             alt="Макет сайта путеводителя по Седоне">
           <figcaption class="item-available">
-            <h3 class="item-heading"><a href="#">Sedona</a></h3>
+            <h3 class="heading item-heading"><a href="#">Sedona</a></h3>
             <p class="item-description">Информационный сайт для туристов</p>
-            <button type="button">9 900 ₽</button>
+            <button class="button show-description-button" type="button">9 900 ₽</button>
           </figcaption>
         </figure>
 
         <figure class="search-item">
           <img src="img/catalogue/cat_item_pink.png" width="358" height="578" alt="Макеты сайта и приложения PINK">
           <figcaption class="item-available">
-            <h3 class="item-heading"><a href="#">Pink App</a></h3>
+            <h3 class="heading item-heading"><a href="#">Pink App</a></h3>
             <p class="item-description">Продуктовый лендинг приложения для iOS и Android</p>
-            <button type="button">9 900 ₽</button>
+            <button class="button show-description-button" type="button">9 900 ₽</button>
           </figcaption>
         </figure>
 
@@ -115,9 +120,9 @@
           <img src="img/catalogue/cat_item_borodinski.png" width="358" height="578"
             alt="Макет сайта барбершопа Бородинский">
           <figcaption class="item-available">
-            <h3 class="item-heading"><a href="#">Barbershop Borodinsky</a></h3>
+            <h3 class="heading item-heading"><a href="#">Barbershop Borodinsky</a></h3>
             <p class="item-description">Сайт салона красоты.Для мужчин, да.</p>
-            <button type="button">9 900 ₽</button>
+            <button class="button show-description-button" type="button">9 900 ₽</button>
           </figcaption>
         </figure>
 
@@ -125,18 +130,18 @@
           <img src="img/catalogue/cat_item_mishka.png" width="358" height="578"
             alt="Макет сайта хендмейд товаров Мишка">
           <figcaption class="item-available">
-            <h3 class="item-heading"><a href="#">Mishka</a></h3>
+            <h3 class="heading item-heading"><a href="#">Mishka</a></h3>
             <p class="item-description">Интернет-магазин вязаных игрушек.</p>
-            <button type="button">9 900 ₽</button>
+            <button class="button show-description-button" type="button">9 900 ₽</button>
           </figcaption>
         </figure>
 
         <figure class="search-item">
           <img src="img/catalogue/cat_item_aplus.png" width="358" height="578" alt="Макет сайта учебного центра">
           <figcaption class="item-available">
-            <h3 class="item-heading"><a href="#">A Plus</a></h3>
+            <h3 class="heading item-heading"><a href="#">A Plus</a></h3>
             <p class="item-description">Лендинг курсов повышения квалификации.</p>
-            <button type="button">9 900 ₽</button>
+            <button class="button show-description-button" type="button">9 900 ₽</button>
           </figcaption>
         </figure>
 
@@ -144,9 +149,9 @@
           <img src="img/catalogue/cat_item_kvast.png" width="358" height="578"
             alt="Макет сайта производителей кваса Кваст">
           <figcaption class="item-available">
-            <h3 class="item-heading"><a href="#">Кваст</a></h3>
+            <h3 class="heading item-heading"><a href="#">Кваст</a></h3>
             <p class="item-description">Промо-сайт производителя крафтового кваса</p>
-            <button type="button">9 900 ₽</button>
+            <button class="button show-description-button" type="button">9 900 ₽</button>
           </figcaption>
         </figure>
       </div>

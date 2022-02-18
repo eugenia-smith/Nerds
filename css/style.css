@@ -87,7 +87,12 @@ body {
 }
 
 .main-nav a:hover,
-.main-nav a:focus,
+.main-nav a:focus{
+  opacity: 70%;
+}
+
+.main-menu a:hover,
+.main-menu a:focus,
 .user-menu:hover,
 .user-menu:focus {
   color: var(--basic-red)
@@ -119,7 +124,7 @@ body {
   background-color: var(--basic-red);
 }*/
 
-/*Main*/
+/*Main --- Index*/
 
 .visually-hidden {
   position: absolute;
@@ -347,4 +352,33 @@ body {
 .form-legendm textarea:invalid {
   border-color: var(--basic-red);
   color: var(--basic-red);
+}
+
+/*Main ---- Catalogue*/
+
+.heading {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--basic-black);
+}
+
+.search-form label{
+  line-height: 20px;
+}
+
+.search-prices label{
+  line-height: 22px;
+  text-transform: uppercase;
+}
+
+.sort-list {
+  list-style: none;
+}
+
+.sort-option {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: var(--basic-black);
 }
