@@ -23,7 +23,7 @@
       <ul class="main-menu">
         <li><a href="index.html">Студия</a></li>
         <li><a href="blank.html">Клиенты</a></li>
-        <li><a>Магазин</a></li>
+        <li class="current-menu-item">Магазин</li>
         <li><a href="blank.html">Контакты</a></li>
       </ul>
       <a class="user-menu" href="#">Корзина</a>
@@ -76,7 +76,7 @@
       <div class="sorting-wrapper">
         <p class="heading sort-heading">Сортировать:</p>
         <ul class="sort-list">
-          <li class="sort-option"><a href="#">по цене</a></li>
+          <li class="sort-option"><a>по цене</a></li>
           <li class="sort-option"><a href="#">по типу</a></li>
           <li class="sort-option"><a href="#">по назначению</a></li>
         </ul>
@@ -88,9 +88,7 @@
           </a>
           <a class="dir-up" href="#">
             <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <g opacity="0.2">
                 <path d="M5.5 0L0 10H11L5.5 0Z" fill="#A6A6A6" />
-              </g>
             </svg>
           </a>
         </div>
@@ -156,22 +154,23 @@
         </figure>
       </div>
       <ul class="search-items-toggle">
-        <li><a class="serch-items-page">1</a></li>
-        <li><a href="#" class="serch-items-page">2</a></li>
-        <li><a href="#" class="serch-items-page">Следующая</a></li>
+        <li class="search-items-page"><a>1</a></li>
+        <li class="search-items-page"><a href="#">2</a></li>
+        <li class="search-items-page next-page"><a href="#">Следующая</a></li>
       </ul>
     </section>
   </main>
 
   <footer class="page-footer">
-    <div class="footer-map"></div>
+    <div class="footer-map">Тут будет карта</div>
     <div class="footer-feedback">
-      <p class="feedback-heading">NЁRDS DESIGN STUDIO</p>
+      <p class="feedback-heading">Nёrds design studio</p>
       <address class="feedback-address">наб. Реки Карповки, 5 лит П, Санкт-Петербург
         <a class="feedback-telephone" href="tel:+78005558628">+7 800 555-86-28</a>
-        <button type="button">Напишите нам</button>
+        <button type="button" class="button">Напишите нам</button>
       </address>
     </div>
+
     <div class="page-popup">
       <p class="popup-heading">Напишите нам</p>
       <form class="popup-form" action="#" method="post">
@@ -182,30 +181,38 @@
           <input type="email" placeholder="email@example.com">
         </label>
         <label class="form-legend">Текст письма
-          <textarea class="form-text" rows="5" cols="30">В свободной форме</textarea>
+          <textarea class="form-text" rows="5" cols="30" placeholder="В свободной форме"></textarea>
         </label>
-        <button type="submit">Отправить</button>
+        <button class="button" type="submit">Отправить</button>
+        <button class="modal-close" type="button">туц</button>
       </form>
     </div>
-    <div class="social-media">
-      <ul class="media-links">
-        <li class="link">
-          <a href="#">VK</a>
-        </li>
-        <li class="link">
-          <a href="#">Facebook</a>
-        </li>
-        <li class="link">
-          <a href="#">Instagram</a>
-        </li>
-      </ul>
-    </div>
+
+    <ul class="media-links">
+      <li class="link">
+        <a href="#">
+          <span class="visually-hidden">VK</span>
+        </a>
+      </li>
+      <li class="link">
+        <a href="#">
+          <span class="visually-hidden">Facebook</span>
+        </a>
+      </li>
+      <li class="link">
+        <a href="#">
+          <span class="visually-hidden">Instagram</span>
+        </a>
+      </li>
+    </ul>
+
     <div class="footer-text">
       <p class="footer-slogan">Давайте дружить, это выгодно!</p>
       <p class="footer-discount">Скидка 10% для друзей из социальных сетей.</p>
     </div>
 
   </footer>
+
 </body>
 
 </html>
