@@ -34,7 +34,9 @@
   --extra-grey: #4d4d4d;
   --basic-grey: #666666;
   --lower-intense-grey: #c1c1c1;
+  --mouse-grey: #b4b9bb;
   --light-grey: #dfdfdf;
+  --even-lighter-grey: #d7dcde;
   --low-saturation-grey: #d5d5d5;
   --extra-light-grey: #e1e1e1;
   --lowest-intense-grey: #eeeeee;
@@ -160,7 +162,7 @@ body {
 
 /*Services*/
 
-.service-list-option:nth-child(2) .service-order{
+.service-list-option:nth-child(2) .service-order {
   background-color: var(--basic-green);
 }
 
@@ -301,4 +303,48 @@ body {
 .footer-discount {
   line-height: 22px;
   color: var(--darkened-grey);
+}
+
+/*Pop-up*/
+
+.popup-heading {
+  font-size: 45px;
+  font-weight: 700px;
+  line-height: 52px;
+  color: var(--basic-black);
+}
+
+.form-legend {
+  line-height: 18px;
+  font-weight: 700;
+  color: var(--basic-black);
+}
+
+.form-legend input,
+.form-legend textarea {
+  border: 2px solid var(--even-lighter-grey);
+  border-radius: 3px;
+  color: var(--darkened-grey);
+}
+
+.form-legend input::placeholder,
+.form-legend textarea::placeholder {
+  opacity: 50%;
+}
+
+.form-legend input:hover,
+.form-legend textarea:hover {
+  border-color: var(--mouse-grey);
+}
+
+.form-legend input:focus,
+.form-legend textarea:focus {
+  border-color: var(--basic-black);
+  color: var(--darkened-grey);
+}
+
+.form-legend input:invalid,
+.form-legendm textarea:invalid {
+  border-color: var(--basic-red);
+  color: var(--basic-red);
 }
