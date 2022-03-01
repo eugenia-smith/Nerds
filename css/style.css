@@ -73,16 +73,42 @@ body {
   line-height: 24px;
   font-weight: 400;
   color: var(--basic-dark);
+
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+  margin: 0 auto;
+}
+
+.page {
+  height: 100%;
 }
 
 /*Header*/
 
 .main-nav {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  padding: 50px 140px 0px;
+
   background-color: var(--lower-intense-grey);
   line-height: 30px;
   font-weight: 500;
   text-transform: uppercase;
   color: var(--basic-black);
+}
+
+.main-menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 45px;
+}
+
+.user-menu {
+  display: block;
+  margin-left: 246px;
 }
 
 .main-nav a, .user-menu {
@@ -115,6 +141,8 @@ body {
 .media-links,
 .search-items-toggle {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .current-menu-item a:not([href]) {
@@ -142,8 +170,23 @@ body {
 
 /*Slider*/
 
-.slide {
+.content {
+  width: 1160px;
+  margin: 0px auto;
+}
+
+.slider {
+  min-height: 431px;
   background-color: var(--lower-intense-grey);
+}
+
+.slide {
+  display: flex;
+  background-color: var(--lower-intense-grey);
+}
+
+.poster {
+  display: block;
 }
 
 .slogan {
@@ -173,6 +216,15 @@ body {
 }
 
 /*Services*/
+
+.service-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 100px;
+  min-height: 507px;
+  padding: 80px 0px;
+
+}
 
 .service-list-option:nth-child(2) .service-order {
   background-color: var(--basic-green);
@@ -215,8 +267,22 @@ body {
   text-transform: uppercase;
 }
 
+.stats-container {
+  display: flex;
+}
+
+.statistics {
+  margin-left: 150px;
+}
+
 .statistics-header {
   color: var(--basic-black);
+}
+
+.statistics-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px
 }
 
 .statistics-percentage {
@@ -231,7 +297,19 @@ body {
   vertical-align: text-top;
 }
 
+.statistics-description {
+  margin: 0px;
+}
+
 /*Clients*/
+
+.clients-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  min-height: 184px;
+}
 
 .client a {
   opacity: 20%;
@@ -264,7 +342,23 @@ body {
 
 }
 
-/*Social media*/
+/*Social media and bottom line*/
+
+.bottom-line {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-gap: 140px;
+  align-items: center;
+  min-height: 217px;
+  padding-left: 140px;
+
+}
+
+.media-links {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
 
 .link,
 .link a {
@@ -319,6 +413,10 @@ body {
 }
 
 /*Pop-up*/
+
+.page-popup {
+  display: none;
+}
 
 .popup-heading {
   font-size: 45px;
