@@ -652,15 +652,17 @@ body {
   row-gap: 20px;
 }
 
+.grids-heading,
+.peculiarities-heading {
+  margin-bottom: 13px;
+}
+
 .grid-type-text::before {
   content: "";
   display: inline-block;
   width: 20px;
   height: 20px;
   margin-right: 10px;
-  /* background-image: url(../img/icons/radio-off.svg);
-  background-position: center center;
-  background-repeat: no-repeat; */
   border: 5px solid var(--extra-grey);
   border-radius: 50%;
   opacity: 0.4;
@@ -678,7 +680,8 @@ body {
   opacity: 1;
 }
 
-.grid-type-text:hover {
+.grid-type-text:hover,
+.specific-text:hover {
   cursor: pointer;
 }
 
@@ -690,8 +693,26 @@ body {
   row-gap: 14px;
 }
 
-.peculiarity .specific {
+.specific-text::before {
+  content: "";
+  display: inline-block;
   margin-right: 14px;
+  width: 22px;
+  height: 22px;
+  border: 3px solid var(--extra-grey);
+  border-radius: 3px;
+  vertical-align: middle;
+  opacity: 0.4;
+}
+
+.specific:checked ~ .specific-text::before {
+  background-image: url(../img/icons/Shape.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.specific:hover ~ .specific-text::before {
+  opacity: 1;
 }
 
 .sort-list {
