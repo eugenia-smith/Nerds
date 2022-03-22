@@ -652,34 +652,34 @@ body {
   row-gap: 20px;
 }
 
-.grid-type .grid,
-.peculiarity .specific:checked {
-  position: relative;
-  margin-right: 11px;
-  margin-left: 30px;
-}
-
-.grid-type::before {
+.grid-type-text::before {
   content: "";
-  position: absolute;
-  top: -23px;
-  left: -30px;
-  width: 25px;
-  height: 25px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  /* background-image: url(../img/icons/radio-off.svg);
+  background-position: center center;
+  background-repeat: no-repeat; */
   border: 5px solid var(--extra-grey);
   border-radius: 50%;
   opacity: 0.4;
+  vertical-align: middle;
+  cursor: pointer;
 }
 
-.grid-type:checked::after {
-  content: "";
-  position: absolute;
-  top: -25px;
-  left: -35px;
-  width: 9px;
-  height: 9px;
-  background-color: var(--extra-grey);
-  opacity: 0.4;
+.grid:checked ~ .grid-type-text::before {
+  background-image: url(../img/icons/Oval.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.grid:hover ~ .grid-type-text::before {
+  opacity: 1;
+}
+
+.grid-type-text:hover {
+  cursor: pointer;
 }
 
 .search-peculiarities {
