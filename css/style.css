@@ -235,13 +235,15 @@ body {
 
 .slider-controls {
   position: absolute;
-  bottom: 93px;
-  left: 50%;
+  bottom: 90px;
+  left: 675px;
   z-index: 20;
 }
 
 .slider-controls .current {
-  border: 2px solid var(--basic-grey);
+  background-image: url(../img/icons/toggle-btn-current.svg);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
 }
 
 .slider-controls button {
@@ -359,7 +361,19 @@ body {
 }
 
 .activity {
+  position: relative;
   margin-bottom: 25px;
+  padding-left: 32px;
+}
+
+.activity::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 25px;
+  height: 2px;
+  background-color: var(--basic-red);
 }
 
 .statistics-logo {
@@ -402,6 +416,8 @@ body {
   gap: 40px;
   justify-items: center;
   margin-bottom: 80px;
+  border-top: 2px solid var(--lowest-intense-grey);
+  border-bottom: 2px solid var(--lowest-intense-grey);
 }
 
 .client a {
@@ -412,12 +428,30 @@ body {
   opacity: 0.2;
 }
 
-.clients a:hover {
+.client a:hover {
   opacity: 1
 }
 
-.clients a:active {
+.client a:active {
   opacity: 0.1
+}
+
+.client {
+  position: relative;
+}
+
+.client:not(.client:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 64px;
+  right: -48px;
+  width: 2px;
+  height: 52px;
+  background-color: var(--lowest-intense-grey);
+}
+
+.client:nth-child(3)::after {
+  right: -60px;
 }
 
 /*Footer*/
