@@ -39,9 +39,19 @@
 
           <fieldset class="search-prices">
             <legend class="heading prices-heading">Стоимость:</legend>
-            <label class="range"><input class="range-toggle" type="range" name="range" min="0" max="200000"></label>
-            <label class="min-price">от<input class="price" type="text" name="min-price" value="0"></label>
-            <label class="max-price">до<input class="price" type="text" name="max-price" value="150000"></label>
+            <div class="range">
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="toggle toggle-min" tabindex="0"></div>
+                <div class="toggle toggle-max" tabindex="0"></div>
+              </div>
+              <div class="price-controls">
+                <label class="min-price">от<input class="price" type="number" name="min-price" value="0"></label>
+                <label class="max-price">до<input class="price" type="number" name="max-price" value="150000"></label>
+              </div>
+            </div>
           </fieldset>
 
           <fieldset class="search-grids">
