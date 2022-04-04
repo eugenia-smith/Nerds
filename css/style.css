@@ -575,7 +575,7 @@ body {
 .page-popup {
   position: absolute;
   transform: translateX(240px);
-  display: none;
+  display: block;
   bottom: 180px;
   width: 960px;
   min-height: 90px;
@@ -585,9 +585,47 @@ body {
 }
 
 .popup-form {
+  position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
+}
+
+.modal-close {
+  position: absolute;
+  top: 78px;
+  right: 90px;
+  width: 21px;
+  height: 21px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  opacity: 0.3;
+}
+
+.modal-close::before,
+.modal-close::after {
+  content: "";
+  position: absolute;
+  width: 21px;
+  height: 4px;
+  background-color: var(--basic-red);
+}
+
+.modal-close::before {
+  transform: rotate(45deg);
+}
+
+.modal-close::after {
+  transform: rotate(-45deg);
+}
+
+.modal-close:hover {
+  opacity: 1;
+}
+
+.modal-close:active {
+  opacity: 0.1;
 }
 
 .popup-heading {
