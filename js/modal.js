@@ -49,8 +49,8 @@ feedbackForm.addEventListener('submit', function (evt) {
   if (!author.value || !email.value || !essay.value) {
     evt.preventDefault();
 
-    // pagePopup.classList.remove('popup-error');
-    // loginPopup.offsetWidth = loginPopup.offsetWidth;
+    pagePopup.classList.remove('popup-error');
+    void pagePopup.offsetWidth;
     pagePopup.classList.add('popup-error');
 
   } else {

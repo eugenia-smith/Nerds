@@ -577,9 +577,12 @@ body {
   display: none;
   top: 80px;
   bottom: auto;
-  transform: translateX(240px);
+  left: 0;
+  right: 0;
+  /* transform: translate(-50% -50%); */
   width: 960px;
   min-height: 90px;
+  margin: auto;
   padding: 63px 100px 84px;
   background-color: var(--basic-white);
   box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.4);
@@ -1123,19 +1126,16 @@ body {
 
   70% {
     transform: translateY(30px);
-    transform: translateX(240px);
 
   }
 
   90% {
     transform: translateY(-10px);
-    transform: translateX(240px);
 
   }
 
   100% {
     transform: translateY(0);
-    transform: translateX(240px);
 
   }
 }
