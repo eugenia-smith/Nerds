@@ -40,12 +40,19 @@ closeButton.addEventListener('click', function (evt) {
   evt.preventDefault();
 
   pagePopup.classList.remove('page-popup-show');
+  pagePopup.classList.remove('popup-error');
+
 });
 
 feedbackForm.addEventListener('submit', function (evt) {
 
   if (!author.value || !email.value || !essay.value) {
     evt.preventDefault();
+
+    // pagePopup.classList.remove('popup-error');
+    // loginPopup.offsetWidth = loginPopup.offsetWidth;
+    pagePopup.classList.add('popup-error');
+
   } else {
     if (isStorageSupport) {
       localStorage.setItem('name', author.value);
@@ -60,6 +67,8 @@ window.addEventListener("keydown", function (event) {
     if (pagePopup.classList.contains('page-popup-show')) {
       evt.preventDefault();
       pagePopup.classList.remove('page-popup-show');
+      pagePopup.classList.remove('popup-error');
+
     }
   }
 });
