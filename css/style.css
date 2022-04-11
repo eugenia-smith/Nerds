@@ -574,10 +574,10 @@ body {
 
 .page-popup {
   position: fixed;
-  transform: translateX(240px);
   display: none;
   top: 80px;
   bottom: auto;
+  transform: translateX(240px);
   width: 960px;
   min-height: 90px;
   padding: 63px 100px 84px;
@@ -587,6 +587,11 @@ body {
 
 .page-popup-show {
   display: block;
+  animation: bounce 0.6s;
+}
+
+.popup-error {
+  animation: shake 0.6s;
 }
 
 .popup-form {
@@ -907,21 +912,21 @@ body {
   opacity: 0.4;
 }
 
-.specific:checked ~ .specific-checkbox::before {
+.specific:checked~.specific-checkbox::before {
   background-image: url(../img/icons/checkbox-on.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.specific:hover ~ .specific-checkbox::before {
+.specific:hover~.specific-checkbox::before {
   opacity: 1;
 }
 
-.specific:disabled ~ .specific-checkbox {
+.specific:disabled~.specific-checkbox {
   opacity: 0.3;
 }
 
-.specific:disabled ~ .specific-checkbox::before {
+.specific:disabled~.specific-checkbox::before {
   opacity: 0.2;
 }
 
@@ -1105,4 +1110,54 @@ body {
 .search-items-page a:not([href]) {
   border: 3px solid var(--lighter-grey);
   background-color: var(--basic-white);
+}
+
+
+/* Animations */
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+
+  }
+
+  70% {
+    transform: translateY(30px);
+    transform: translateX(240px);
+
+  }
+
+  90% {
+    transform: translateY(-10px);
+    transform: translateX(240px);
+
+  }
+
+  100% {
+    transform: translateY(0);
+    transform: translateX(240px);
+
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
 }
