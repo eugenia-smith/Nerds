@@ -210,9 +210,25 @@ body {
   background-color: var(--lowest-intense-grey);
 }
 
-.current-slide {
-  display: flex;
+.slider .slide:nth-child(2) .slide-description,
+.slider .slide:last-child .slide-description {
+  position: absolute;
+  width: 525px;
 }
+
+.slider .slide:last-child .slogan {
+  padding-right: 90px;
+
+}
+
+.slider .slide:nth-child(2) .comment,
+.slider .slide:last-child .comment {
+  padding-right: 155px;
+}
+
+/* .current-slide {
+  display: flex;
+} */
 
 .slide-description {
   padding-top: 78px;
@@ -220,6 +236,7 @@ body {
 
 .poster {
   display: block;
+  margin-left: auto;
 }
 
 .slogan {
