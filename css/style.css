@@ -167,10 +167,6 @@ body {
   padding: 0;
 }
 
-.current-menu-item a:not([href]) {
-  color: var(--basic-black);
-}
-
 .current-menu-item {
   position: relative
 }
